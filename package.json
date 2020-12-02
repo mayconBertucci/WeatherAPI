@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server public",
+    "dev": "babel src/app.js --out-file=public/js/index.js --presets=@babel/react,@babel/env --watch",
+    "sass": "sass --watch public/css/styles.scss public/css/styles.css"
+  },
+  "author": "Maycon Bertucci",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "live-server": "^1.2.1",
+    "sass": "^1.29.0"
+  },
+  "dependencies": {}
+}

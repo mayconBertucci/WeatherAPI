@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F1F1F1;
+
+    div#message {
+        position: absolute;
+        background-color: #F8D7DA;
+        border: 1px solid #FF8080;
+        color: #B75A24;
+        border-radius: 8px 0 0 8px;
+        padding: 20px;
+        text-indent: 10px;
+        right: 0px;
+        top: 132px;
+        display: none;
+    }
+
+    input {
+        margin-top: 50px;
+        height: 60px;
+        width: 500px;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 1.3em;
+    }
+
+    button {
+        width: 200px;
+        height: 40px;
+        margin: auto auto 0 auto;
+        background-color: #48A9A6;
+        color: white;
+        font-size: 1.3em;
+        border-radius: 16px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    button:focus, button:active {
+        outline: none;
+    }
+
+    section {
+        width: 600px;
+        margin: auto;
+        height: 400px;
+        box-shadow: 0px 0px 15px 0px silver;
+        border-radius: 12px;
+
+        div.container {
+            position: relative;
+            height: 100%;
+
+            img {
+                position: absolute;
+                right: 20px;
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                position: absolute;
+                top: 50px;
+                left: 40px;
+                font-size: 3.8em;
+            }
+
+            p#tiempo {
+                position: absolute;
+                top: 150px;
+                left: 50px;
+                font-size: 1.3em;
+            }
+
+            p#temp {
+                position: absolute;
+                bottom: 60px;
+                right: 40px;
+                font-size: 1.2em;
+
+                span#temp {
+                    font-size: 3.2em;
+                    font-weight: bold;
+                }
+            }
+
+            p#max {
+                position: absolute;
+                bottom: 60px;
+                left: 40px;
+                font-size: 1.3em;
+                span#max {
+                    font-size: 1.4em;
+                    font-weight: bold;
+                }
+            }
+
+            p#min {
+                position: absolute;
+                bottom: 60px;
+                left: 150px;
+                font-size: 1.3em;
+                margin-left: 40px;
+
+                span#min {
+                    font-size: 1.4em;
+                    font-weight: bold;
+                }
+            }
+              
+            p {
+                span.celsius { font-weight: bold; }
+                span#celsiusTemp { 
+                    font-size: 1.9em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 26px;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+}
